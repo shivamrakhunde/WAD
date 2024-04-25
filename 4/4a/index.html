@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Engineering College App</title> 
+ <script src="https://code.jquery.com/"></script> 
+</head> 
+<body> 
+<div id="main-container"> 
+ <h1>Welcome to PICT College</h1> 
+ <button id="showAboutBtn">About us</button> 
+ <div id="coursesContainer" style="display: none;"> 
+ <h2>About us</h2> 
+ <ul id="coursesList"></ul> 
+</div> 
+</div> 
+<script> 
+$(document).ready(function() { 
+ $('#showAboutBtn').click( 
+ $('#coursesContainer').toggle( 
+ if ($('#coursesContainer').is(': 
+ // Simulate fetching data from server 
+ var courses = [ 
+ { name: 'Computer Science', link: 'https://www.pict.edu/CE-dept/ 
+ { name: 'Information Technology', link: 'https://www.pict.edu/IT-dept/ 
+ { name: 'Electronic and Telecommunication', link:  
+'https://www.pict.edu/ENTC-' } 
+ ]; 
+ $('#coursesList').empty(); 
+ $.each(courses, function(index, course) { 
+ $('#coursesList').append('<li>course.name + '</a></li>'); 
+}); 
+} 
+}); 
+}); 
+</script>
