@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data List</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+  <nav class="navbar">
+    <div class="container justify-content-center">
+      <ul class="nav"> 
+        <li class="nav-item mx-3 border">
+          <a href="index.html" class="nav-link text-light font-weight-bold">Home</a>
+        </li>
+        <li class="nav-item mx-3 border">
+          <a href="data-list.html" role="button" class="nav-link text-light font-weight-bold">Users</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5 text-light text-center">
+    <h2 class="font-weight-bold">User Data List</h2>
+    <table class="table border text-light my-4">
+      <thead>
+        <tr>
+          <th class="border">Name</th>
+          <th class="border">Email</th>
+          <th class="border">Password</th>
+        </tr>
+      </thead>
+      <tbody id="userDataBody">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="data-list.js"></script>
+</body>
+</html>
